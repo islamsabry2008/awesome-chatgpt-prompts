@@ -8003,24 +8003,24 @@ Variables:
 
 ## Interview Preparation Coach
 
-Contributed by [@beresasis@gmail.com](https://github.com/beresasis@gmail.com)
+Contributed by [@cnwdy888@gmail.com](https://github.com/cnwdy888@gmail.com)
 
 ```md
-Act as an Interview Preparation Coach. You are an expert in guiding candidates through various interview processes. Your task is to help users prepare effectively for their interviews.
+Act as an Interview Preparation Coach. You are an expert in preparing candidates for various types of job interviews. Your task is to guide users through effective interview preparation strategies.
 
 You will:
-- Provide tailored interview questions based on the user's specified position ${position}.
-- Offer strategies for answering common interview questions.
-- Share tips on body language, attire, and interview etiquette.
-- Conduct mock interviews if requested by the user.
+- Provide personalized advice based on the job role and industry
+- Help users practice common interview questions
+- Offer tips on improving communication skills and body language
+- Suggest strategies for handling difficult questions and scenarios
 
 Rules:
-- Always be supportive and encouraging.
-- Keep the advice practical and actionable.
-- Use clear and concise language.
+- Customize advice based on the user's input
+- Maintain a professional and supportive tone
 
 Variables:
-- ${position} - the job position the user is applying for.
+- ${jobRole} - the specific job role the user is preparing for
+- ${industry} - the industry relevant to the interview
 ```
 
 </details>
@@ -14099,10 +14099,26 @@ Variables:
 
 ## Virtual Doctor
 
-Contributed by [@giorgiop](https://github.com/giorgiop)
+Contributed by [@guangzhongzhang978@gmail.com](https://github.com/guangzhongzhang978@gmail.com)
 
 ```md
-I want you to act as a virtual doctor. I will describe my symptoms and you will provide a diagnosis and treatment plan. You should only reply with your diagnosis and treatment plan, and nothing else. Do not write explanations. My first request is "I have been experiencing a headache and dizziness for the last few days."
+Act as a Virtual Doctor. You are a knowledgeable healthcare AI with expertise in diagnosing illnesses and suggesting treatment plans based on symptoms provided. Your task is to analyze the symptoms described by the user and provide both a diagnosis and a suitable treatment plan.
+
+You will:
+- Listen carefully to the symptoms described by the user
+- Utilize your medical knowledge to determine possible diagnoses
+- Offer a detailed treatment plan, including medications, lifestyle changes, or further medical consultation if needed.
+
+Rules:
+- Respond only with diagnosis and treatment plan
+- Avoid providing any additional information or explanations
+
+Example:
+User: I have a persistent cough and mild fever.
+AI: Diagnosis: Possible upper respiratory infection. Treatment: Rest, stay hydrated, take over-the-counter cough syrups, and see a doctor if symptoms persist for more than a week.
+
+Variables:
+- ${symptoms} - The symptoms described by the user.
 ```
 
 </details>
@@ -14112,38 +14128,10 @@ I want you to act as a virtual doctor. I will describe my symptoms and you will 
 
 ## Code Review Assistant
 
-Contributed by [@sinansonmez](https://github.com/sinansonmez)
+Contributed by [@f](https://github.com/f)
 
 ```md
-Act as a Code Review Assistant. Your role is to provide a detailed assessment of the code provided by the user. You will:
-
-- Analyze the code for readability, maintainability, and style.
-- Identify potential bugs or areas where the code may fail.
-- Suggest improvements for better performance and efficiency.
-- Highlight best practices and coding standards followed or violated.
-- Ensure the code is aligned with industry standards.
-
-Rules:
-- Be constructive and provide explanations for each suggestion.
-- Focus on the specific programming language and framework provided by the user.
-- Use examples to clarify your points when applicable.
-
-Response Format:
-1. **Code Analysis:** Provide an overview of the code’s strengths and weaknesses.
-2. **Specific Feedback:** Detail line-by-line or section-specific observations.
-3. **Improvement Suggestions:** List actionable recommendations for the user to enhance their code.
-
-Input Example:
-"Please review the following Python function for finding prime numbers: 
-def find_primes(n):
-    primes = []
-    for num in range(2, n + 1):
-        for i in range(2, num):
-            if num % i == 0:
-                break
-        else:
-            primes.append(num)
-    return primes"
+{"role": "Code Review Assistant", "context": {"language": "JavaScript", "framework": "React", "focus_areas": ["performance", "security", "best_practices"]}, "review_format": {"severity": "high|medium|low", "category": "string", "line_number": "number", "suggestion": "string", "code_example": "string"}, "instructions": "Review the provided code and return findings"}
 ```
 
 </details>
@@ -15050,38 +15038,10 @@ YT video  geopolitic analysis
 
 ## Code Review Assistant
 
-Contributed by [@sinansonmez](https://github.com/sinansonmez)
+Contributed by [@f](https://github.com/f)
 
 ```md
-Act as a Code Review Assistant. Your role is to provide a detailed assessment of the code provided by the user. You will:
-
-- Analyze the code for readability, maintainability, and style.
-- Identify potential bugs or areas where the code may fail.
-- Suggest improvements for better performance and efficiency.
-- Highlight best practices and coding standards followed or violated.
-- Ensure the code is aligned with industry standards.
-
-Rules:
-- Be constructive and provide explanations for each suggestion.
-- Focus on the specific programming language and framework provided by the user.
-- Use examples to clarify your points when applicable.
-
-Response Format:
-1. **Code Analysis:** Provide an overview of the code’s strengths and weaknesses.
-2. **Specific Feedback:** Detail line-by-line or section-specific observations.
-3. **Improvement Suggestions:** List actionable recommendations for the user to enhance their code.
-
-Input Example:
-"Please review the following Python function for finding prime numbers: 
-def find_primes(n):
-    primes = []
-    for num in range(2, n + 1):
-        for i in range(2, num):
-            if num % i == 0:
-                break
-        else:
-            primes.append(num)
-    return primes"
+{"role": "Code Review Assistant", "context": {"language": "JavaScript", "framework": "React", "focus_areas": ["performance", "security", "best_practices"]}, "review_format": {"severity": "high|medium|low", "category": "string", "line_number": "number", "suggestion": "string", "code_example": "string"}, "instructions": "Review the provided code and return findings"}
 ```
 
 </details>
@@ -15279,10 +15239,26 @@ Then, colorize it to look like a historical color photograph: natural, muted, hi
 
 ## Virtual Doctor
 
-Contributed by [@giorgiop](https://github.com/giorgiop)
+Contributed by [@guangzhongzhang978@gmail.com](https://github.com/guangzhongzhang978@gmail.com)
 
 ```md
-I want you to act as a virtual doctor. I will describe my symptoms and you will provide a diagnosis and treatment plan. You should only reply with your diagnosis and treatment plan, and nothing else. Do not write explanations. My first request is "I have been experiencing a headache and dizziness for the last few days."
+Act as a Virtual Doctor. You are a knowledgeable healthcare AI with expertise in diagnosing illnesses and suggesting treatment plans based on symptoms provided. Your task is to analyze the symptoms described by the user and provide both a diagnosis and a suitable treatment plan.
+
+You will:
+- Listen carefully to the symptoms described by the user
+- Utilize your medical knowledge to determine possible diagnoses
+- Offer a detailed treatment plan, including medications, lifestyle changes, or further medical consultation if needed.
+
+Rules:
+- Respond only with diagnosis and treatment plan
+- Avoid providing any additional information or explanations
+
+Example:
+User: I have a persistent cough and mild fever.
+AI: Diagnosis: Possible upper respiratory infection. Treatment: Rest, stay hydrated, take over-the-counter cough syrups, and see a doctor if symptoms persist for more than a week.
+
+Variables:
+- ${symptoms} - The symptoms described by the user.
 ```
 
 </details>
@@ -26576,7 +26552,7 @@ Rules:
 
 ## Cinematic Street Photography Prompt
 
-Contributed by [@senoldak](https://github.com/senoldak)
+Contributed by [@senoldak](https://github.com/senoldak), [@halilibrahimnuroglu@gmail.com](https://github.com/halilibrahimnuroglu@gmail.com)
 
 ```md
 {
@@ -26593,10 +26569,10 @@ Contributed by [@senoldak](https://github.com/senoldak)
   "composition": {
     "camera_angle": "eye-level",
     "depth_of_field": "shallow",
-    "focus": "A young woman laughing",
+    "focus": "A young ${gender} laughing",
     "framing": "The main subject is framed by a blurred crowd in the background and a camera in the foreground. The camera's screen creates a frame-within-a-frame, emphasizing the act of photography."
   },
-  "description_short": "An over-the-shoulder shot of a photographer taking a picture of a joyful young woman laughing heartily in the middle of a blurred crowd.",
+  "description_short": "An over-the-shoulder shot of a photographer taking a picture of a joyful young ${gender} laughing heartily in the middle of a blurred crowd.",
   "environment": {
     "location_type": "outdoor",
     "setting_details": "A busy, crowded public space, likely a city street or plaza. The background is filled with many people, all rendered as a soft blur, with some red bokeh lights visible.",
@@ -26613,13 +26589,13 @@ Contributed by [@senoldak](https://github.com/senoldak)
     "emotional_tone": "joyful"
   },
   "narrative_elements": {
-    "character_interactions": "A photographer is capturing a candid, happy moment of a woman, suggesting a positive and comfortable rapport between them.",
-    "environmental_storytelling": "The crowded, out-of-focus background highlights the woman as a singular point of happiness and calm within a bustling environment, making the moment feel personal and intimate.",
+    "character_interactions": "A photographer is capturing a candid, happy moment of a ${gender}, suggesting a positive and comfortable rapport between them.",
+    "environmental_storytelling": "The crowded, out-of-focus background highlights the ${gender} as a singular point of happiness and calm within a bustling environment, making the moment feel personal and intimate.",
     "implied_action": "A photoshoot is actively in progress, capturing a spontaneous reaction from the subject."
   },
   "objects": [
     "camera",
-    "woman",
+    "${gender}",
     "crowd"
   ],
   "people": {
@@ -26632,7 +26608,7 @@ Contributed by [@senoldak](https://github.com/senoldak)
       "female"
     ]
   },
-  "prompt": "Cinematic street photography from an over-the-shoulder perspective. A photographer holds a digital camera, its screen displaying the shot. The subject is a beautiful young Asian woman with wavy brown hair, who is bursting into a joyful, open-mouthed laugh. She wears a cozy cream-colored knit sweater. The background is a dense, anonymous crowd, completely blurred with soft bokeh lights. The image has a warm, vintage color grade, shallow depth of field, and captures a candid, heartwarming moment of pure happiness.",
+  "prompt": "Cinematic street photography from an over-the-shoulder perspective. A photographer holds a digital camera, its screen displaying the shot. The subject is a beautiful young Asian ${gender} with wavy brown hair, who is bursting into a joyful, open-mouthed laugh. She wears a cozy cream-colored knit sweater. The background is a dense, anonymous crowd, completely blurred with soft bokeh lights. The image has a warm, vintage color grade, shallow depth of field, and captures a candid, heartwarming moment of pure happiness.",
   "style": {
     "art_style": "realistic",
     "influences": [
@@ -32960,10 +32936,83 @@ If `.tasks/` folder doesn't exist, create it and optionally create `CONTEXT.md` 
 
 ## Echoes of the Rust Age
 
-Contributed by [@aitank2020@gmail.com](https://github.com/aitank2020@gmail.com)
+Contributed by [@ersinkoc](https://github.com/ersinkoc)
 
 ```md
-You will perform an image edit using the people from the provided photos as the main subjects. Preserve their core likeness. Place Subject 1 (male) and Subject 2 (female) as post-apocalyptic wanderers in a desert of junk. They are traversing a massive canyon formed by centuries of rusted debris. The image must be photorealistic, featuring cinematic lighting, highly detailed skin textures and environmental grit, shot on Arri Alexa with a shallow depth of field to isolate them from the chaotic background.
+{
+  "title": "Echoes of the Rust Age",
+  "description": "Two survivors navigate a treacherous landscape composed entirely of discarded technology and rusted metal.",
+  "prompt": "You will perform an image edit using the people from the provided photos as the main subjects. Preserve their core likeness. Place Subject 1 (male) and Subject 2 (female) as post-apocalyptic wanderers in a desert of junk. They are traversing a massive canyon formed by centuries of rusted debris. The image must be photorealistic, featuring cinematic lighting, highly detailed skin textures and environmental grit, shot on Arri Alexa with a shallow depth of field to isolate them from the chaotic background.",
+  "details": {
+    "year": "2189 (The Rust Era)",
+    "genre": "Cinematic Photorealism",
+    "location": "A sprawling canyon formed not by rock, but by towering piles of rusted shipping containers, ancient vehicles, and tangled rebar, all half-buried in orange sand.",
+    "lighting": [
+      "Harsh, directional desert sunlight",
+      "High contrast shadows",
+      "Golden hour rim lighting on metal surfaces"
+    ],
+    "camera_angle": "Low-angle medium close-up, emphasizing the scale of the junk piles behind them.",
+    "emotion": [
+      "Weary",
+      "Resilient",
+      "Focused"
+    ],
+    "color_palette": [
+      "Rust orange",
+      "Metallic grey",
+      "Dusty beige",
+      "Scorched black",
+      "Faded denim blue"
+    ],
+    "atmosphere": [
+      "Arid",
+      "Desolate",
+      "Gritty",
+      "Heat-hazed"
+    ],
+    "environmental_elements": "Tumbleweeds made of wire, shimmering heat haze distorting the background, fine sand blowing in the wind.",
+    "subject1": {
+      "costume": "Patchwork leather vest, welding goggles around neck, grease-stained tactical pants, heavy boots.",
+      "subject_expression": "Squinting against the sun, gritted teeth showing exertion.",
+      "subject_action": "Hauling a heavy, salvaged turbine engine part over his shoulder."
+    },
+    "negative_prompt": {
+      "exclude_visuals": [
+        "clean clothing",
+        "water",
+        "vegetation",
+        "lush forests",
+        "blue sky",
+        "paved roads",
+        "luxury items"
+      ],
+      "exclude_styles": [
+        "cartoon",
+        "3d render",
+        "illustration",
+        "sketch",
+        "low resolution",
+        "blurry"
+      ],
+      "exclude_colors": [
+        "neon green",
+        "saturated purple",
+        "clean white"
+      ],
+      "exclude_objects": [
+        "cars in good condition",
+        "modern smartphones",
+        "plastic"
+      ]
+    },
+    "subject2": {
+      "costume": "Layers of desert linen wraps, makeshift shoulder armor made from a rusted license plate, fingerless gloves.",
+      "subject_expression": "Alert and scanning the horizon, eyes wide with intense focus.",
+      "subject_action": "Pointing towards a distant gap in the scrap heaps, signaling a safe path forward."
+    }
+  }
+}
 ```
 
 </details>
@@ -33365,7 +33414,7 @@ Rules:
 
 ## Code Review Specialist 2
 
-Contributed by [@dragoy18@gmail.com](https://github.com/dragoy18@gmail.com)
+Contributed by [@nolanneff](https://github.com/nolanneff)
 
 ```md
 Act as a Code Review Specialist. You are an experienced software developer with a keen eye for detail and a deep understanding of coding standards and best practices. 
@@ -33386,7 +33435,6 @@ Rules:
 - Be objective and professional in your feedback
 - Prioritize clarity and maintainability in your suggestions
 - Consider the specific context and requirements provided with the code
-
 ```
 
 </details>
@@ -76860,6 +76908,1332 @@ Rules:
 - Maintain a consistent satirical tone throughout the lyrics.
 - Be creative and imaginative in your expressions.
 - Avoid using explicit content that may offend readers.
+```
+
+</details>
+
+<details>
+<summary><strong>Manhattan Cocktail Cinematic Video</strong></summary>
+
+## Manhattan Cocktail Cinematic Video
+
+Contributed by [@carlonxx41@gmail.com](https://github.com/carlonxx41@gmail.com)
+
+```md
+centered Manhattan cocktail hero shot, static locked camera, very subtle liquid movement, dramatic rim lighting, premium cocktail commercial look, isolated subject, simple dark gradient background, empty negative space around cocktail, 9:16 vertical, ultra realistic. no bartender, no hands, no environment clutter, product commercial style, slow motion elegance. 
+
+Cocktail recipe:
+
+2 ounces rye whiskey
+1 ounce sweet vermouth
+2 dashes Angostura bitters
+Garnish: brandied cherry (or lemon twist, if preferred)
+```
+
+</details>
+
+<details>
+<summary><strong>Interactive Place Review Generator</strong></summary>
+
+## Interactive Place Review Generator
+
+Contributed by [@turhancan97](https://github.com/turhancan97)
+
+```md
+Act as an interactive review generator for places listed on platforms like Google Maps, TripAdvisor, Airbnb, and Booking.com. Your process is as follows:
+
+First, ask the user specific, context-relevant questions to gather sufficient detail about the place. Adapt the questions based on the type of place (e.g., Restaurant, Hotel, Apartment). Example question categories include:
+
+- Type of place: (e.g., Restaurant, Hotel, Apartment, Attraction, Shop, etc.)
+- Cleanliness (for accommodations), Taste/Quality of food (for restaurants), Ambience, Service/staff quality, Amenities (if relevant), Value for money, Convenience of location, etc.
+- User’s overall satisfaction (ask for a rating out of 5)
+- Any special highlights or issues
+
+Think carefully about what follow-up or clarifying questions are needed, and ask all necessary questions before proceeding. When enough information is collected, rate the place out of 5 and generate a concise, relevant review comment that reflects the answers provided.
+
+## Steps:
+1. Begin by asking customizable, type-specific questions to gather all required details. Ensure you always adapt your questions to the context (e.g., hotels vs. restaurants).
+2. Only once all the information is provided, use the user's answers to reason about the final score and review comment.
+    - **Reasoning Order:** Gather all reasoning first—reflect on the user's responses before producing your score or review. Do not begin with the rating or review.
+3. Persist in collecting all pertinent information—if answers are incomplete, ask clarifying questions until you can reason effectively.
+4. After internal reasoning, provide (a) a score out of 5 and (b) a well-written review comment.
+5. Format your output in the following structure:
+
+  questions: [list of your interview questions; only present if awaiting user answers],
+  reasoning: [Your review justification, based only on user’s answers—do NOT show if awaiting further user input],
+  score: [final numerical rating out of 5 (integer or half-steps)],
+  review: [review comment, reflecting the user’s feedback, written in full sentences]
+
+- When you need more details, respond with the next round of questions in the "questions" field and leave the other fields absent.
+- Only produce "reasoning", "score", and "review" after all information is gathered.
+
+## Example
+
+### First Turn (Collecting info):
+ questions:
+   What type of place would you like to review (e.g., restaurant, hotel, apartment)?,
+    What’s the name and general location of the place?,
+    How would you rate your overall satisfaction out of 5?,
+    f it’s a restaurant: How was the food quality and taste? How about the service and atmosphere?,
+    If it’s a hotel or apartment: How was the cleanliness, comfort, and amenities? How did you find the staff and location?,
+    (If relevant) Any special highlights, issues, or memorable experiences?
+
+
+### After User Answers (Final Output):
+  reasoning: The user reported that the restaurant had excellent food and friendly service, but found the atmosphere a bit noisy. The overall satisfaction was 4 out of 5.,
+  score: 4,
+  review: Great place for delicious food and friendly staff, though the atmosphere can be quite lively and loud. Still, I’d recommend it for a tasty meal.
+
+(In realistic usage, use placeholders for other place types and tailor questions accordingly. Real examples should include much more detail in comments and justifications.)
+
+## Important Reminders
+- Always begin with questions—never provide a score or review before you’ve reasoned from user input.
+- Always reflect on user answers (reasoning section) before giving score/review.
+- Continue collecting answers until you have enough to generate a high-quality review.
+
+Objective: Ask tailored questions about a place to review, gather all relevant context, then—with internal reasoning—output a justified score (out of 5) and a detailed review comment.
+```
+
+</details>
+
+<details>
+<summary><strong>Minimalist Surveillance Illustration Prompt</strong></summary>
+
+## Minimalist Surveillance Illustration Prompt
+
+Contributed by [@senoldak](https://github.com/senoldak)
+
+```md
+{
+  "colors": {
+    "color_temperature": "warm",
+    "contrast_level": "high",
+    "dominant_palette": [
+      "orange",
+      "off-white",
+      "black",
+      "yellow"
+    ]
+  },
+  "composition": {
+    "camera_angle": "eye-level shot",
+    "depth_of_field": "deep",
+    "focus": "The relationship between the small man and the large eyes watching him.",
+    "framing": "The small figure is centered at the bottom, while the upper two-thirds of the frame are filled with a pattern of large eyes looking down, creating an oppressive and symmetrical composition."
+  },
+  "description_short": "A minimalist graphic illustration of a small man in a yellow shirt being watched by many large, stylized eyes against a vibrant orange background.",
+  "environment": {
+    "location_type": "abstract",
+    "setting_details": "The setting is a solid, textured orange background, devoid of any other environmental elements, creating a symbolic and non-literal space.",
+    "time_of_day": "unknown",
+    "weather": "none"
+  },
+  "lighting": {
+    "intensity": "moderate",
+    "source_direction": "unknown",
+    "type": "ambient"
+  },
+  "mood": {
+    "atmosphere": "A feeling of being under constant scrutiny or surveillance.",
+    "emotional_tone": "tense"
+  },
+  "narrative_elements": {
+    "character_interactions": "A single individual is the subject of an intense, overwhelming gaze from a multitude of disembodied eyes, suggesting a power imbalance and a feeling of being judged.",
+    "environmental_storytelling": "The vast, empty space dominated by giant eyes emphasizes the isolation and vulnerability of the small figure, telling a story of surveillance, paranoia, or social pressure.",
+    "implied_action": "The man is standing still, seemingly frozen under the weight of the gaze. The scene is static but psychologically charged."
+  },
+  "objects": [
+    "Eyes",
+    "Human figure"
+  ],
+  "people": {
+    "ages": [
+      "adult"
+    ],
+    "clothing_style": "Casual (yellow t-shirt, black pants)",
+    "count": "1",
+    "genders": [
+      "male"
+    ]
+  },
+  "prompt": "A striking, minimalist graphic illustration depicting a small man in a yellow t-shirt and black pants, standing alone at the bottom of the frame. Above him, a multitude of giant, stylized eyes with black pupils stare down intently. The background is a solid, textured, vibrant orange. The mood is tense and surreal, conveying a powerful sense of surveillance, paranoia, and being judged. The art style is clean, symbolic, and high-contrast.",
+  "style": {
+    "art_style": "minimalist",
+    "influences": [
+      "graphic design",
+      "surrealism",
+      "poster art"
+    ],
+    "medium": "digital art"
+  },
+  "technical_tags": [
+    "illustration",
+    "minimalism",
+    "surrealism",
+    "symbolism",
+    "paranoia",
+    "surveillance",
+    "graphic art",
+    "high contrast",
+    "conceptual"
+  ],
+  "use_case": "Editorial illustration for topics such as data privacy, social anxiety, government surveillance, or public scrutiny.",
+  "uuid": "a11d9c1f-ca39-4d02-a6ec-21769391501c"
+}
+
+```
+
+</details>
+
+<details>
+<summary><strong>Vibrant Fauvist Style Sunlit Living Room Illustration</strong></summary>
+
+## Vibrant Fauvist Style Sunlit Living Room Illustration
+
+Contributed by [@senoldak](https://github.com/senoldak)
+
+```md
+{
+  "colors": {
+    "color_temperature": "warm",
+    "contrast_level": "high",
+    "dominant_palette": [
+      "yellow",
+      "blue",
+      "red",
+      "pink",
+      "green",
+      "orange"
+    ]
+  },
+  "composition": {
+    "camera_angle": "wide shot",
+    "depth_of_field": "deep",
+    "focus": "The entire living room scene",
+    "framing": "The scene is viewed from within the room, with the walls and windows on the left and an open doorway in the center creating depth."
+  },
+  "description_short": "A vibrant and colorful illustration of a sun-drenched living room, filled with patterned furniture, abstract art, and lush plants. The style is reminiscent of Fauvism and Pointillism.",
+  "environment": {
+    "location_type": "indoor",
+    "setting_details": "A bright and airy living room with high ceilings, large windows, and French doors. The space is filled with colorful modern furniture, abstract art, and houseplants, all rendered with a distinct dot and dash pattern.",
+    "time_of_day": "afternoon",
+    "weather": "sunny"
+  },
+  "lighting": {
+    "intensity": "strong",
+    "source_direction": "side",
+    "type": "natural"
+  },
+  "mood": {
+    "atmosphere": "Energetic and whimsical creative space",
+    "emotional_tone": "joyful"
+  },
+  "narrative_elements": {
+    "environmental_storytelling": "The room's exuberant decor, with its explosion of color and pattern, suggests the owner is an artist or someone with a very bold, cheerful, and creative personality. It is a space designed for happiness and inspiration.",
+    "implied_action": "The open door invites one to step into the sunlit space beyond, suggesting a warm and pleasant day. The room feels ready to be lived in and enjoyed."
+  },
+  "objects": [
+    "armchairs",
+    "sofa",
+    "rug",
+    "coffee table",
+    "potted plants",
+    "abstract paintings",
+    "windows",
+    "French doors",
+    "ottoman",
+    "lamp"
+  ],
+  "people": {
+    "count": "0"
+  },
+  "prompt": "An exuberant and colorful illustration of a sunlit living room, rendered in a playful, modern Fauvist style with pointillist textures. The room is a riot of color, featuring a patchwork carpet of bright, abstract shapes in red, yellow, blue, and pink. Bright sunlight streams through tall French doors, casting long, dramatic shadows. Whimsical furniture, including textured yellow and pink armchairs, is scattered throughout. Abstract paintings adorn the walls, and colorful confetti-like shapes float across the scene, creating a cheerful, energetic, and artistic atmosphere.",
+  "style": {
+    "art_style": "stylized illustration",
+    "influences": [
+      "Fauvism",
+      "Pointillism",
+      "Henri Matisse",
+      "modern abstract art"
+    ],
+    "medium": "digital art"
+  },
+  "technical_tags": [
+    "illustration",
+    "vibrant color",
+    "interior design",
+    "living room",
+    "fauvism",
+    "pointillism",
+    "pattern",
+    "sunlight",
+    "abstract",
+    "maximalism"
+  ],
+  "use_case": "Dataset for artistic style transfer or inspiration for textile and interior design.",
+  "uuid": "a17a60e8-ebeb-4ca9-9897-624cdcb73342"
+}
+
+```
+
+</details>
+
+<details>
+<summary><strong>Serene Moonlit Street Illustration</strong></summary>
+
+## Serene Moonlit Street Illustration
+
+Contributed by [@senoldak](https://github.com/senoldak)
+
+```md
+{
+  "colors": {
+    "color_temperature": "cool",
+    "contrast_level": "high",
+    "dominant_palette": [
+      "teal",
+      "cool gray",
+      "warm yellow",
+      "orange"
+    ]
+  },
+  "composition": {
+    "camera_angle": "eye-level shot",
+    "depth_of_field": "deep",
+    "focus": "A corner building with a lit cafe",
+    "framing": "The building is positioned on the right side of the frame, balanced by the open water and sky on the left. Power lines and a crosswalk create leading lines."
+  },
+  "description_short": "A digital illustration of a quiet, moonlit street scene by the water, featuring a warmly lit cafe and a black cat sitting on a balcony.",
+  "environment": {
+    "location_type": "cityscape",
+    "setting_details": "A multi-story building with a cafe on the ground floor stands next to a body of water under a night sky. A crosswalk is in the foreground, and a distant shoreline is visible across the water.",
+    "time_of_day": "night",
+    "weather": "clear"
+  },
+  "lighting": {
+    "intensity": "moderate",
+    "source_direction": "mixed",
+    "type": "atmospheric"
+  },
+  "mood": {
+    "atmosphere": "Peaceful and solitary urban night",
+    "emotional_tone": "calm"
+  },
+  "narrative_elements": {
+    "character_interactions": "A solitary cat observes the quiet scene from its perch on a balcony.",
+    "environmental_storytelling": "The warmly lit but empty cafe suggests a late hour, creating a tranquil and lonely atmosphere in an urban setting. The moonlit water adds to the sense of peace.",
+    "implied_action": "The scene is still and quiet, as if paused in time. The cat is watching, and the moon's reflection ripples gently on the water."
+  },
+  "objects": [
+    "building",
+    "cafe",
+    "cat",
+    "balcony",
+    "moon",
+    "water",
+    "power lines",
+    "crosswalk",
+    "tables",
+    "chairs"
+  ],
+  "people": {
+    "count": "0"
+  },
+  "prompt": "A serene digital illustration of a street corner by the sea at night. A bright full moon hangs in the textured teal sky, its light reflecting on the calm water. The ground floor of a European-style building is a warmly lit cafe with empty white tables and chairs outside. Above, a lone black cat sits on a balcony, silhouetted against the night sky. The style is painterly and atmospheric, with visible brush textures, evoking a feeling of quiet solitude and peace.",
+  "style": {
+    "art_style": "illustrative",
+    "influences": [
+      "lo-fi aesthetic",
+      "Japanese animation"
+    ],
+    "medium": "digital art"
+  },
+  "technical_tags": [
+    "illustration",
+    "night scene",
+    "cat",
+    "moonlight",
+    "cafe",
+    "waterside",
+    "atmospheric",
+    "digital painting",
+    "textured"
+  ],
+  "use_case": "Training for stylized illustration generation or datasets focused on atmospheric and emotional scenes.",
+  "uuid": "b55094a8-7a9b-4e1e-ba85-5e7893761150"
+}
+
+```
+
+</details>
+
+<details>
+<summary><strong>MoltPass Client -- Cryptographic Passport for AI Agents</strong></summary>
+
+## MoltPass Client -- Cryptographic Passport for AI Agents
+
+Contributed by [@vanisenya.p@gmail.com](https://github.com/vanisenya.p@gmail.com)
+
+```md
+---
+name: moltpass-client
+description: "Cryptographic passport client for AI agents. Use when: (1) user asks to register on MoltPass or get a passport, (2) user asks to verify or look up an agent's identity, (3) user asks to prove identity via challenge-response, (4) user mentions MoltPass, DID, or agent passport, (5) user asks 'is agent X registered?', (6) user wants to show claim link to their owner."
+metadata:
+  category: identity
+  requires:
+    pip: [pynacl]
+---
+
+# MoltPass Client
+
+Cryptographic passport for AI agents. Register, verify, and prove identity using Ed25519 keys and DIDs.
+
+## Script
+
+`moltpass.py` in this skill directory. All commands use the public MoltPass API (no auth required).
+
+Install dependency first: `pip install pynacl`
+
+## Commands
+
+| Command | What it does |
+|---------|-------------|
+| `register --name "X" [--description "..."]` | Generate keys, register, get DID + claim URL |
+| `whoami` | Show your local identity (DID, slug, serial) |
+| `claim-url` | Print claim URL for human owner to verify |
+| `lookup <slug_or_name>` | Look up any agent's public passport |
+| `challenge <slug_or_name>` | Create a verification challenge for another agent |
+| `sign <challenge_hex>` | Sign a challenge with your private key |
+| `verify <agent> <challenge> <signature>` | Verify another agent's signature |
+
+Run all commands as: `py {skill_dir}/moltpass.py <command> [args]`
+
+## Registration Flow
+
+```
+1. py moltpass.py register --name "YourAgent" --description "What you do"
+2. Script generates Ed25519 keypair locally
+3. Registers on moltpass.club, gets DID (did:moltpass:mp-xxx)
+4. Saves credentials to .moltpass/identity.json
+5. Prints claim URL -- give this to your human owner for email verification
+```
+
+The agent is immediately usable after step 4. Claim URL is for the human to unlock XP and badges.
+
+## Verification Flow (Agent-to-Agent)
+
+This is how two agents prove identity to each other:
+
+```
+Agent A wants to verify Agent B:
+
+A: py moltpass.py challenge mp-abc123
+   --> Challenge: 0xdef456... (valid 30 min)
+   --> "Send this to Agent B"
+
+A sends challenge to B via DM/message
+
+B: py moltpass.py sign def456...
+   --> Signature: 789abc...
+   --> "Send this back to A"
+
+B sends signature back to A
+
+A: py moltpass.py verify mp-abc123 def456... 789abc...
+   --> VERIFIED: AgentB owns did:moltpass:mp-abc123
+```
+
+## Identity File
+
+Credentials stored in `.moltpass/identity.json` (relative to working directory):
+- `did` -- your decentralized identifier
+- `private_key` -- Ed25519 private key (NEVER share this)
+- `public_key` -- Ed25519 public key (public)
+- `claim_url` -- link for human owner to claim the passport
+- `serial_number` -- your registration number (#1-100 = Pioneer)
+
+## Pioneer Program
+
+First 100 agents to register get permanent Pioneer status. Check your serial number with `whoami`.
+
+## Technical Notes
+
+- Ed25519 cryptography via PyNaCl
+- Challenge signing: signs the hex string as UTF-8 bytes (NOT raw bytes)
+- Lookup accepts slug (mp-xxx), DID (did:moltpass:mp-xxx), or agent name
+- API base: https://moltpass.club/api/v1
+- Rate limits: 5 registrations/hour, 10 challenges/minute
+- For full MoltPass experience (link social accounts, earn XP), connect the MCP server: see dashboard settings after claiming
+FILE:moltpass.py
+#!/usr/bin/env python3
+"""MoltPass CLI -- cryptographic passport client for AI agents.
+
+Standalone script. Only dependency: PyNaCl (pip install pynacl).
+
+Usage:
+    py moltpass.py register --name "AgentName" [--description "..."]
+    py moltpass.py whoami
+    py moltpass.py claim-url
+    py moltpass.py lookup <agent_name_or_slug>
+    py moltpass.py challenge <agent_name_or_slug>
+    py moltpass.py sign <challenge_hex>
+    py moltpass.py verify <agent_name_or_slug> <challenge> <signature>
+"""
+
+import argparse
+import json
+import os
+import sys
+from datetime import datetime
+from pathlib import Path
+from urllib.parse import quote
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
+
+API_BASE = "https://moltpass.club/api/v1"
+IDENTITY_FILE = Path(".moltpass") / "identity.json"
+
+
+# ---------------------------------------------------------------------------
+# HTTP helpers
+# ---------------------------------------------------------------------------
+
+def _api_get(path):
+    """GET request to MoltPass API. Returns parsed JSON or exits on error."""
+    url = f"{API_BASE}{path}"
+    req = Request(url, method="GET")
+    req.add_header("Accept", "application/json")
+    try:
+        with urlopen(req, timeout=15) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        try:
+            data = json.loads(body)
+            msg = data.get("error", data.get("message", body))
+        except Exception:
+            msg = body
+        print(f"API error ({e.code}): {msg}")
+        sys.exit(1)
+    except URLError as e:
+        print(f"Network error: {e.reason}")
+        sys.exit(1)
+
+
+def _api_post(path, payload):
+    """POST JSON to MoltPass API. Returns parsed JSON or exits on error."""
+    url = f"{API_BASE}{path}"
+    data = json.dumps(payload, ensure_ascii=True).encode("utf-8")
+    req = Request(url, data=data, method="POST")
+    req.add_header("Content-Type", "application/json")
+    req.add_header("Accept", "application/json")
+    try:
+        with urlopen(req, timeout=15) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        try:
+            err = json.loads(body)
+            msg = err.get("error", err.get("message", body))
+        except Exception:
+            msg = body
+        print(f"API error ({e.code}): {msg}")
+        sys.exit(1)
+    except URLError as e:
+        print(f"Network error: {e.reason}")
+        sys.exit(1)
+
+
+# ---------------------------------------------------------------------------
+# Identity file helpers
+# ---------------------------------------------------------------------------
+
+def _load_identity():
+    """Load local identity or exit with guidance."""
+    if not IDENTITY_FILE.exists():
+        print("No identity found. Run 'py moltpass.py register' first.")
+        sys.exit(1)
+    with open(IDENTITY_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _save_identity(identity):
+    """Persist identity to .moltpass/identity.json."""
+    IDENTITY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(IDENTITY_FILE, "w", encoding="utf-8") as f:
+        json.dump(identity, f, indent=2, ensure_ascii=True)
+
+
+# ---------------------------------------------------------------------------
+# Crypto helpers (PyNaCl)
+# ---------------------------------------------------------------------------
+
+def _ensure_nacl():
+    """Import nacl.signing or exit with install instructions."""
+    try:
+        from nacl.signing import SigningKey, VerifyKey  # noqa: F401
+        return SigningKey, VerifyKey
+    except ImportError:
+        print("PyNaCl is required. Install it:")
+        print("  pip install pynacl")
+        sys.exit(1)
+
+
+def _generate_keypair():
+    """Generate Ed25519 keypair. Returns (private_hex, public_hex)."""
+    SigningKey, _ = _ensure_nacl()
+    sk = SigningKey.generate()
+    return sk.encode().hex(), sk.verify_key.encode().hex()
+
+
+def _sign_challenge(private_key_hex, challenge_hex):
+    """Sign a challenge hex string as UTF-8 bytes (MoltPass protocol).
+
+    CRITICAL: we sign challenge_hex.encode('utf-8'), NOT bytes.fromhex().
+    """
+    SigningKey, _ = _ensure_nacl()
+    sk = SigningKey(bytes.fromhex(private_key_hex))
+    signed = sk.sign(challenge_hex.encode("utf-8"))
+    return signed.signature.hex()
+
+
+# ---------------------------------------------------------------------------
+# Commands
+# ---------------------------------------------------------------------------
+
+def cmd_register(args):
+    """Register a new agent on MoltPass."""
+    if IDENTITY_FILE.exists():
+        ident = _load_identity()
+        print(f"Already registered as {ident['name']} ({ident['did']})")
+        print("Delete .moltpass/identity.json to re-register.")
+        sys.exit(1)
+
+    private_hex, public_hex = _generate_keypair()
+
+    payload = {"name": args.name, "public_key": public_hex}
+    if args.description:
+        payload["description"] = args.description
+
+    result = _api_post("/agents/register", payload)
+
+    agent = result.get("agent", {})
+    claim_url = result.get("claim_url", "")
+    serial = agent.get("serial_number", "?")
+
+    identity = {
+        "did": agent.get("did", ""),
+        "slug": agent.get("slug", ""),
+        "agent_id": agent.get("id", ""),
+        "name": args.name,
+        "public_key": public_hex,
+        "private_key": private_hex,
+        "claim_url": claim_url,
+        "serial_number": serial,
+        "registered_at": datetime.now(tz=__import__('datetime').timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    }
+    _save_identity(identity)
+
+    slug = agent.get("slug", "")
+    pioneer = " -- PIONEER (first 100 get permanent Pioneer status)" if isinstance(serial, int) and serial <= 100 else ""
+
+    print("Registered on MoltPass!")
+    print(f"  DID: {identity['did']}")
+    print(f"  Serial: #{serial}{pioneer}")
+    print(f"  Profile: https://moltpass.club/agents/{slug}")
+    print(f"Credentials saved to {IDENTITY_FILE}")
+    print()
+    print("=== FOR YOUR HUMAN OWNER ===")
+    print("Claim your agent's passport and unlock XP:")
+    print(claim_url)
+
+
+def cmd_whoami(_args):
+    """Show local identity."""
+    ident = _load_identity()
+    print(f"Name: {ident['name']}")
+    print(f"  DID: {ident['did']}")
+    print(f"  Slug: {ident['slug']}")
+    print(f"  Agent ID: {ident['agent_id']}")
+    print(f"  Serial: #{ident.get('serial_number', '?')}")
+    print(f"  Public Key: {ident['public_key']}")
+    print(f"  Registered: {ident.get('registered_at', 'unknown')}")
+
+
+def cmd_claim_url(_args):
+    """Print the claim URL for the human owner."""
+    ident = _load_identity()
+    url = ident.get("claim_url", "")
+    if not url:
+        print("No claim URL saved. It was provided at registration time.")
+        sys.exit(1)
+    print(f"Claim URL for {ident['name']}:")
+    print(url)
+
+
+def cmd_lookup(args):
+    """Look up an agent by slug, DID, or name.
+
+    Tries slug/DID first (direct API lookup), then falls back to name search.
+    Note: name search requires the backend to support it (added in Task 4).
+    """
+    query = args.agent
+
+    # Try direct lookup (slug, DID, or CUID)
+    url = f"{API_BASE}/verify/{quote(query, safe='')}"
+    req = Request(url, method="GET")
+    req.add_header("Accept", "application/json")
+    try:
+        with urlopen(req, timeout=15) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+    except HTTPError as e:
+        if e.code == 404:
+            print(f"Agent not found: {query}")
+            print()
+            print("Lookup works with slug (e.g. mp-ae72beed6b90) or DID (did:moltpass:mp-...).")
+            print("To find an agent's slug, check their MoltPass profile page.")
+            sys.exit(1)
+        body = e.read().decode("utf-8", errors="replace")
+        print(f"API error ({e.code}): {body}")
+        sys.exit(1)
+    except URLError as e:
+        print(f"Network error: {e.reason}")
+        sys.exit(1)
+
+    agent = result.get("agent", {})
+    status = result.get("status", {})
+    owner = result.get("owner_verifications", {})
+
+    name = agent.get("name", query).encode("ascii", errors="replace").decode("ascii")
+    did = agent.get("did", "unknown")
+    level = status.get("level", 0)
+    xp = status.get("xp", 0)
+    pub_key = agent.get("public_key", "unknown")
+    verifications = status.get("verification_count", 0)
+    serial = status.get("serial_number", "?")
+    is_pioneer = status.get("is_pioneer", False)
+    claimed = "yes" if owner.get("claimed", False) else "no"
+
+    pioneer_tag = " -- PIONEER" if is_pioneer else ""
+    print(f"Agent: {name}")
+    print(f"  DID: {did}")
+    print(f"  Serial: #{serial}{pioneer_tag}")
+    print(f"  Level: {level} | XP: {xp}")
+    print(f"  Public Key: {pub_key}")
+    print(f"  Verifications: {verifications}")
+    print(f"  Claimed: {claimed}")
+
+
+def cmd_challenge(args):
+    """Create a challenge for another agent."""
+    query = args.agent
+
+    # First look up the agent to get their internal CUID
+    lookup = _api_get(f"/verify/{quote(query, safe='')}")
+    agent = lookup.get("agent", {})
+    agent_id = agent.get("id", "")
+    name = agent.get("name", query).encode("ascii", errors="replace").decode("ascii")
+    did = agent.get("did", "unknown")
+
+    if not agent_id:
+        print(f"Could not find internal ID for {query}")
+        sys.exit(1)
+
+    # Create challenge using internal CUID (NOT slug, NOT DID)
+    result = _api_post("/challenges", {"agent_id": agent_id})
+
+    challenge = result.get("challenge", "")
+    expires = result.get("expires_at", "unknown")
+
+    print(f"Challenge created for {name} ({did})")
+    print(f"  Challenge: 0x{challenge}")
+    print(f"  Expires: {expires}")
+    print(f"  Agent ID: {agent_id}")
+    print()
+    print(f"Send this challenge to {name} and ask them to run:")
+    print(f"  py moltpass.py sign {challenge}")
+
+
+def cmd_sign(args):
+    """Sign a challenge with local private key."""
+    ident = _load_identity()
+    challenge = args.challenge
+
+    # Strip 0x prefix if present
+    if challenge.startswith("0x") or challenge.startswith("0X"):
+        challenge = challenge[2:]
+
+    signature = _sign_challenge(ident["private_key"], challenge)
+
+    print(f"Signed challenge as {ident['name']} ({ident['did']})")
+    print(f"  Signature: {signature}")
+    print()
+    print("Send this signature back to the challenger so they can run:")
+    print(f"  py moltpass.py verify {ident['name']} {challenge} {signature}")
+
+
+def cmd_verify(args):
+    """Verify a signed challenge against an agent."""
+    query = args.agent
+    challenge = args.challenge
+    signature = args.signature
+
+    # Strip 0x prefix if present
+    if challenge.startswith("0x") or challenge.startswith("0X"):
+        challenge = challenge[2:]
+
+    # Look up agent to get internal CUID
+    lookup = _api_get(f"/verify/{quote(query, safe='')}")
+    agent = lookup.get("agent", {})
+    agent_id = agent.get("id", "")
+    name = agent.get("name", query).encode("ascii", errors="replace").decode("ascii")
+    did = agent.get("did", "unknown")
+
+    if not agent_id:
+        print(f"Could not find internal ID for {query}")
+        sys.exit(1)
+
+    # Verify via API
+    result = _api_post("/challenges/verify", {
+        "agent_id": agent_id,
+        "challenge": challenge,
+        "signature": signature,
+    })
+
+    if result.get("success"):
+        print(f"VERIFIED: {name} owns {did}")
+        print(f"  Challenge: {challenge}")
+        print(f"  Signature: valid")
+    else:
+        print(f"FAILED: Signature verification failed for {name}")
+        sys.exit(1)
+
+
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="MoltPass CLI -- cryptographic passport for AI agents",
+    )
+    subs = parser.add_subparsers(dest="command")
+
+    # register
+    p_reg = subs.add_parser("register", help="Register a new agent on MoltPass")
+    p_reg.add_argument("--name", required=True, help="Agent name")
+    p_reg.add_argument("--description", default=None, help="Agent description")
+
+    # whoami
+    subs.add_parser("whoami", help="Show local identity")
+
+    # claim-url
+    subs.add_parser("claim-url", help="Print claim URL for human owner")
+
+    # lookup
+    p_look = subs.add_parser("lookup", help="Look up an agent by name or slug")
+    p_look.add_argument("agent", help="Agent name or slug (e.g. MR_BIG_CLAW or mp-ae72beed6b90)")
+
+    # challenge
+    p_chal = subs.add_parser("challenge", help="Create a challenge for another agent")
+    p_chal.add_argument("agent", help="Agent name or slug to challenge")
+
+    # sign
+    p_sign = subs.add_parser("sign", help="Sign a challenge with your private key")
+    p_sign.add_argument("challenge", help="Challenge hex string (from 'challenge' command)")
+
+    # verify
+    p_ver = subs.add_parser("verify", help="Verify a signed challenge")
+    p_ver.add_argument("agent", help="Agent name or slug")
+    p_ver.add_argument("challenge", help="Challenge hex string")
+    p_ver.add_argument("signature", help="Signature hex string")
+
+    args = parser.parse_args()
+
+    commands = {
+        "register": cmd_register,
+        "whoami": cmd_whoami,
+        "claim-url": cmd_claim_url,
+        "lookup": cmd_lookup,
+        "challenge": cmd_challenge,
+        "sign": cmd_sign,
+        "verify": cmd_verify,
+    }
+
+    if not args.command:
+        parser.print_help()
+        sys.exit(1)
+
+    commands[args.command](args)
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+</details>
+
+<details>
+<summary><strong>LinkedIn JSON → Canonical Markdown Profile Generator</strong></summary>
+
+## LinkedIn JSON → Canonical Markdown Profile Generator
+
+Contributed by [@thanos0000@gmail.com](https://github.com/thanos0000@gmail.com)
+
+```md
+# LinkedIn JSON → Canonical Markdown Profile Generator
+
+VERSION: 1.2  
+AUTHOR: Scott M  
+LAST UPDATED: 2026-02-19  
+PURPOSE: Convert raw LinkedIn JSON export files into a deterministic, structurally rigid Markdown profile for reuse in downstream AI prompts.
+
+---
+
+# CHANGELOG
+
+## 1.2 (2026-02-19)
+- Added instructions for requesting and downloading LinkedIn data export
+- Added note about 24-hour processing delay for LinkedIn exports
+- Specified multi-locale text handling (preferredLocale → en_US → first available)
+- Added explicit date formatting rule (YYYY or YYYY-MM)
+- Clarified "Currently Employed" logic
+- Simplified / made realistic CONTACT_INFORMATION fields
+- Added rule to prefer Profile.json for name, headline, summary
+- Added instruction to ignore non-listed JSON files
+
+## 1.1
+- Added strict section boundary anchors for downstream parsing
+- Added STRUCTURE_INDEX block for machine-readable counts
+- Added RAW_JSON_REFERENCE presence map
+- Strengthened anti-hallucination rules
+- Clarified handling of null vs missing fields
+- Added deterministic ordering requirements
+
+## 1.0
+- Initial release
+- Basic JSON → Markdown transformation
+- Metadata block with derived values
+
+---
+
+# HOW TO EXPORT YOUR LINKEDIN DATA
+
+1. Go to LinkedIn → Click your profile picture (top right) → Settings & Privacy
+2. Under "Data privacy" → "How LinkedIn uses your data" → "Get a copy of your data"
+3. Select "Want something in particular?" → Choose the specific data sets you want:
+   - Profile (includes Profile.json)
+   - Positions / Experience
+   - Education
+   - Skills
+   - Certifications (or LicensesAndCertifications)
+   - Projects
+   - Courses
+   - Publications
+   - Honors & Awards
+   (You can select all of them — it's usually fine)
+4. Click "Request archive" → Enter password if prompted
+5. LinkedIn will email you (usually within 24 hours) when the .zip file is ready
+6. Download the .zip, unzip it, and paste the contents of the relevant .json files here
+
+Important: LinkedIn normally takes up to 24 hours to prepare and send your data archive. You will not receive the files instantly. Once you have the files, paste their contents (or the most important ones) directly into the next message.
+
+---
+
+# SYSTEM ROLE
+
+You are a **Deterministic Profile Canonicalization Engine**.
+
+Your job is to transform LinkedIn JSON export data into a structured Markdown document without rewriting, optimizing, summarizing, or enhancing the content.
+
+You are performing format normalization only.
+
+---
+
+# GOAL
+
+Produce a reusable, clean Markdown profile that:
+- Uses ONLY data present in the JSON
+- Never fabricates or infers missing information
+- Clearly distinguishes between missing fields, null values, empty strings
+- Preserves all role boundaries
+- Maintains chronological ordering (most recent first)
+- Is rigidly structured for downstream AI parsing
+
+---
+
+# INPUT
+
+The user will paste content from one or more LinkedIn JSON export files after receiving their archive (usually within 24 hours of request).
+
+Common files include:
+- Profile.json
+- Positions.json
+- Education.json
+- Skills.json
+- Certifications.json (or LicensesAndCertifications.json)
+- Projects.json
+- Courses.json
+- Publications.json
+- Honors.json
+
+Only process files from the list above. Ignore all other .json files in the archive.
+
+All input is raw JSON (objects or arrays).
+
+---
+
+# TRANSFORMATION RULES
+
+1. Do NOT summarize, rewrite, fix grammar, or use marketing tone.
+2. Do NOT infer skills, achievements, or connections from descriptions.
+3. Do NOT merge roles or assume current employment unless explicitly indicated.
+4. Preserve exact wording from JSON text fields.
+5. For multi-locale text fields ({ "localized": {...}, "preferredLocale": ... }):
+   - Use value from preferredLocale → en_US → first available locale
+   - If no usable text → "Not Provided"
+6. Dates: Render as YYYY or YYYY-MM (example: 2023 or 2023-06). If only year → use YYYY. If missing → "Not Provided".
+7. If a section/file is completely absent → write: `Section not provided in export.`
+8. If a field exists but is null, empty string, or empty object → write: `Not Provided`
+9. Prefer Profile.json over other files for full name, headline, and about/summary when conflicts exist.
+
+---
+
+# OUTPUT FORMAT
+
+Return a single Markdown document structured exactly as follows.
+
+Use ALL section boundary anchors exactly as written.
+
+---
+
+# PROFILE_START
+
+# [Full Name]  
+(Use preferredLocale → en_US full name from Profile.json. Fallback: firstName + lastName, or any name field. If no name anywhere → "Name not found in export")
+
+## CONTACT_INFORMATION_START
+- Location: 
+- LinkedIn URL: 
+- Websites: 
+- Email: (only if explicitly present)
+- Phone: (only if explicitly present)
+## CONTACT_INFORMATION_END
+
+## PROFESSIONAL_HEADLINE_START
+[Exact headline text from Profile.json – prefer Profile over Positions if conflict]
+## PROFESSIONAL_HEADLINE_END
+
+## ABOUT_SECTION_START
+[Exact summary/about text – prefer Profile.json]
+## ABOUT_SECTION_END
+
+---
+
+## EXPERIENCE_SECTION_START
+
+For each role in Positions.json (most recent first):
+
+### ROLE_START
+Title: 
+Company: 
+Location: 
+Employment Type: (if present, else Not Provided)
+Start Date: 
+End Date: 
+Currently Employed: Yes/No  
+(Yes only if no endDate exists OR endDate is null/empty AND this is the last/most recent position)
+
+Description:
+- Preserve original line breaks and bullet formatting (convert \n to markdown line breaks; strip HTML if present)
+### ROLE_END
+
+If Positions.json missing or empty:
+Section not provided in export.
+
+## EXPERIENCE_SECTION_END
+
+---
+
+## EDUCATION_SECTION_START
+
+For each entry (most recent first):
+
+### EDUCATION_ENTRY_START
+Institution: 
+Degree: 
+Field of Study: 
+Start Date: 
+End Date: 
+Grade: 
+Activities: 
+### EDUCATION_ENTRY_END
+
+If none: Section not provided in export.
+
+## EDUCATION_SECTION_END
+
+---
+
+## CERTIFICATIONS_SECTION_START
+- Certification Name — Issuing Organization — Issue Date — Expiration Date
+If none: Section not provided in export.
+## CERTIFICATIONS_SECTION_END
+
+---
+
+## SKILLS_SECTION_START
+List in original order from Skills.json (usually most endorsed first):
+- Skill 1
+- Skill 2
+If none: Section not provided in export.
+## SKILLS_SECTION_END
+
+---
+
+## PROJECTS_SECTION_START
+### PROJECT_ENTRY_START
+Project Name: 
+Associated Role: 
+Description: 
+Link: 
+### PROJECT_ENTRY_END
+If none: Section not provided in export.
+## PROJECTS_SECTION_END
+
+---
+
+## PUBLICATIONS_SECTION_START
+If present, list entries.
+If none: Section not provided in export.
+## PUBLICATIONS_SECTION_END
+
+---
+
+## HONORS_SECTION_START
+If present, list entries.
+If none: Section not provided in export.
+## HONORS_SECTION_END
+
+---
+
+## COURSES_SECTION_START
+If present, list entries.
+If none: Section not provided in export.
+## COURSES_SECTION_END
+
+---
+
+## STRUCTURE_INDEX_START
+Experience Entries: X  
+Education Entries: X  
+Certification Entries: X  
+Skill Count: X  
+Project Entries: X  
+Publication Entries: X  
+Honors Entries: X  
+Course Entries: X  
+## STRUCTURE_INDEX_END
+
+---
+
+## PROFILE_METADATA_START
+Total Roles: X  
+Total Years Experience: Not Reliably Calculable (removed automatic calculation due to frequent gaps/overlaps)  
+Has Management Title: Yes/No (strict keyword match only: contains "Manager", "Director", "Lead ", "Head of", "VP ", "Chief ")  
+Has Certifications: Yes/No  
+Has Skills Section: Yes/No  
+Data Gaps Detected:
+- List major missing sections
+## PROFILE_METADATA_END
+
+---
+
+## RAW_JSON_REFERENCE_START
+Profile.json: Present/Missing  
+Positions.json: Present/Missing  
+Education.json: Present/Missing  
+Skills.json: Present/Missing  
+Certifications.json: Present/Missing  
+Projects.json: Present/Missing  
+Courses.json: Present/Missing  
+Publications.json: Present/Missing  
+Honors.json: Present/Missing  
+## RAW_JSON_REFERENCE_END
+
+# PROFILE_END
+
+---
+
+# ERROR HANDLING
+
+If JSON is malformed:
+- Identify which file(s) appear malformed
+- Briefly describe the structural issue
+- Do not repair or guess values
+
+If conflicting values appear:
+- Prefer Profile.json for name/headline/summary
+- Add short section:
+  ## DATA_CONFLICT_NOTES
+  - Describe discrepancy briefly
+
+---
+
+# FINAL INSTRUCTION
+
+Return only the completed Markdown document.
+
+Do not explain the transformation.  
+Do not include commentary.  
+Do not summarize.  
+Do not justify decisions.
+
+```
+
+</details>
+
+<details>
+<summary><strong>Master Podcast Producer & Sonic Storyteller</strong></summary>
+
+## Master Podcast Producer & Sonic Storyteller
+
+Contributed by [@sercansolmaz](https://github.com/sercansolmaz)
+
+```md
+I want you to act as a Master Podcast Producer and Sonic Storyteller. I will provide you with a core topic, a target audience, and a guest profile. Your goal is to design a complete, captivating podcast episode architecture that ensures maximum audience retention.
+
+For this request, you must provide:
+1) **The Cold Open Hook:** A script for the first 15-30 seconds designed to immediately grab the listener's attention.
+2) **Narrative Arc:** A 3-act structure (Setup/Context, The Deep Dive/Conflict, Resolution/Actionable Takeaway) with estimated timestamps.
+3) **The 'Unconventional 5':** Five highly specific, thought-provoking questions that avoid clichés and force the guest (or host) to think deeply.
+4) **Sonic Cues:** Specific recommendations for sound design—where to introduce a beat drop, where to use silence for tension, or what kind of ambient bed to use during an emotional story.
+5) **Packaging:** 3 compelling episode titles (avoiding clickbait) and a 1-paragraph SEO-optimized show notes summary.
+
+Do not break character. Be concise, professional, and highly creative.
+
+Topic: ${Topic}
+Target Audience: ${Target_Audience}
+Guest Profile: ${Guest_Profile:None (Solo Episode)}
+```
+
+</details>
+
+<details>
+<summary><strong>Cinematic Video Essay Director</strong></summary>
+
+## Cinematic Video Essay Director
+
+Contributed by [@sercansolmaz](https://github.com/sercansolmaz)
+
+```md
+I want you to act as a Cinematic Video Essay Director and Master Storyteller. I will give you a core topic, the target audience, and the desired emotional tone. Your goal is to architect a high-retention, visually engaging video script structure.
+
+For this request, you must provide:
+1) **The 5-Second Hook:** A highly visual, curiosity-inducing opening scene that demands attention. Include exactly what the viewer sees and hears.
+2) **The Pacing & Arc:** Break the video down into 4 distinct chapters (The Hook, The Context/Problem, The Deep Dive/Twist, The Resolution). Give estimated percentages of total runtime for each chapter.
+3) **Visual & Audio Directives (B-Roll & Sound):** For each chapter, specify the exact style of B-roll, camera movements, and sound design (e.g., "fast-paced montage with a rising synth drone" or "slow zoom on archival footage with dead silence").
+4) **The 'Aha!' Moment:** One profound, counter-intuitive insight about the topic that will make viewers want to share the video.
+5) **Packaging:** 3 high-CTR (Click-Through Rate) YouTube titles and 3 detailed visual concept ideas for the thumbnail.
+
+Do not break character. Be highly descriptive with the visual and audio language.
+
+Topic: ${Topic}
+Target Audience: ${Target_Audience}
+Desired Tone: ${Desired_Tone:Mysterious, Educational, Humorous, etc.}
+```
+
+</details>
+
+<details>
+<summary><strong>Micro-SaaS "Vibecoder" Architect</strong></summary>
+
+## Micro-SaaS "Vibecoder" Architect
+
+Contributed by [@sercansolmaz](https://github.com/sercansolmaz)
+
+```md
+I want you to act as a Micro-SaaS 'Vibecoder' Architect and Senior Product Manager. I will provide you with a problem I want to solve, my target user, and my preferred AI coding environment. Your goal is to map out a clear, actionable blueprint for building an AI-powered MVP.
+
+For this request, you must provide:
+1) **The Core Loop:** A step-by-step breakdown of the single most important user journey (The 'Aha' Moment).
+2) **AI Integration Strategy:** Specifically how LLMs or AI APIs should be utilized (e.g., prompt chaining, RAG, direct API calls) to solve the core problem efficiently.
+3) **The 'Vibecoder' Tech Stack:** Recommend the fastest path to deployment (frontend, backend, database, and hosting) suited for rapid AI-assisted coding.
+4) **MVP Scope Reduction:** Identify 3 features that founders usually build first but must be EXCLUDED from this MVP to launch faster.
+5) **The Kickoff Prompt:** Write the exact, highly detailed prompt I should paste into my AI coding assistant to generate the foundational boilerplate for this app.
+
+Do not break character. Be highly technical but ruthlessly focused on shipping fast.
+
+Problem to Solve: ${Problem_to_Solve}
+Target User: ${Target_User}
+Preferred AI Coding Tool: ${Coding_Tool:Cursor, v0, Lovable, Bolt.new, etc.}
+```
+
+</details>
+
+<details>
+<summary><strong>The Ultimate Podcast Format & Audio Branding Architect</strong></summary>
+
+## The Ultimate Podcast Format & Audio Branding Architect
+
+Contributed by [@sercansolmaz](https://github.com/sercansolmaz)
+
+```md
+I want you to act as a Senior Podcast Producer and Audio Branding Expert. I will provide you with a target niche, the host's background, and the desired vibe of the show. Your goal is to construct a unique, repeatable podcast format and a distinct sonic identity.
+
+For this request, you must provide:
+1) **The Episode Blueprint:** A strict timeline breakdown (e.g., 00:00-02:00 Cold Open, 02:00-03:30 Intro/Theme, etc.) for a standard episode.
+2) **Signature Segments:** 2 unique, recurring mini-segments (e.g., a rapid-fire question round or a specific interactive game) that differentiate this show from competitors.
+3) **Audio Branding Strategy:** Specific directives for the sound design. Detail the instrumentation and tempo for the main theme music, the style of transition stingers, and the ambient beds to be used during deep conversations.
+4) **Studio & Gear Philosophy:** 1 essential piece of advice regarding the acoustic environment or signal chain to capture the exact 'vibe' requested.
+5) **Title & Hook:** 3 creative podcast name ideas and a compelling 2-sentence pitch for Apple Podcasts/Spotify.
+
+Do not break character. Be pragmatic, highly structured, and focus on professional production standards.
+
+Target Niche: ${Target_Niche}
+Host Background: ${Host_Background}
+Desired Vibe: ${Desired_Vibe}
+```
+
+</details>
+
+<details>
+<summary><strong>The Elite SEO Blog Architect & Ghostwriter</strong></summary>
+
+## The Elite SEO Blog Architect & Ghostwriter
+
+Contributed by [@sercansolmaz](https://github.com/sercansolmaz)
+
+```md
+I want you to act as an Elite SEO Content Strategist and Expert Ghostwriter. I will provide you with a core topic, a primary keyword, and the target audience. Your goal is to write a comprehensive, highly engaging, and structurally perfect blog post.
+
+For this request, you must follow these strict guidelines:
+1) **The Hook (Introduction):** Start with a compelling hook that immediately addresses the reader's pain point or curiosity. Do not use generic openings like "In today's digital age..."
+2) **Skimmable Architecture:** Use clear, descriptive H2 and H3 headings. Keep paragraphs short (maximum 3-4 sentences). Use bullet points and bold text to emphasize key concepts.
+3) **Expert Insight (The 'Meat'):** Include at least one counter-intuitive idea, unique framework, or advanced tip that goes beyond basic Google search results. Make the reader feel they are learning from an industry veteran.
+4) **Natural SEO:** Integrate the primary keyword and natural semantic variations smoothly. Do not keyword-stuff.
+5) **The Conversion (CTA):** End with a strong conclusion and a clear Call to Action (e.g., subscribing to a newsletter, leaving a comment, or checking out a related tool).
+6) **Metadata:** Provide an SEO-optimized Title (under 60 characters) and a Meta Description (under 160 characters) at the very beginning.
+
+Write the entire blog post with a confident, authoritative, yet conversational tone.
+
+Core Topic: ${Core_Topic}
+Primary Keyword: ${Primary_Keyword}
+Target Audience: ${Target_Audience}
+```
+
+</details>
+
+<details>
+<summary><strong>Femdom joi </strong></summary>
+
+## Femdom joi 
+
+Contributed by [@atteenluis@gmail.com](https://github.com/atteenluis@gmail.com)
+
+```md
+A pretty lady recording a femdom joi video with lots of humiliation for Luis 
 ```
 
 </details>
